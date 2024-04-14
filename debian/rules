@@ -4,17 +4,17 @@
 	dh ${@}
 
 override_dh_auto_install:
-	/root/.cargo/bin/cargo fetch
-	/root/.cargo/bin/cargo build --release
-	mkdir -p debian/an-anime-game-launcher/usr/bin/
-	mkdir -p debian/an-anime-game-launcher/usr/share/pixmaps
-	mkdir -p debian/an-anime-game-launcher/usr/share/applications/
-	mkdir -p debian/an-anime-game-launcher/usr/share/icons/hicolor/scalable/apps
-	cp -vf target/release/anime-game-launcher debian/an-anime-game-launcher/usr/bin/
-	chmod 755 debian/an-anime-game-launcher/usr/bin/anime-game-launcher
-	cp -vf assets/images/icon.png debian/an-anime-game-launcher/usr/share/pixmaps/an-anime-game-launcher.png
-	cp -vf assets/images/icon.png /usr/share/icons/hicolor/scalable/apps/moe.launcher.an-anime-game-launcher.png
-	chmod 644 debian/an-anime-game-launcher/usr/share/pixmaps/an-anime-game-launcher.png
-	chmod 644 debian/an-anime-game-launcher/usr/share/icons/hicolor/scalable/apps/moe.launcher.an-anime-game-launcher.png
-    	cp -vf an-anime-game-launcher.desktop debian/an-anime-game-launcher/usr/share/applications/
-    	chmod 644 debian/an-anime-game-launcher/usr/share/applications/an-anime-game-launcher.desktop
+		/root/.cargo/bin/cargo fetch
+		/root/.cargo/bin/cargo build --release
+		mkdir -p debian/an-anime-game-launcher/usr/bin/
+		mkdir -p debian/an-anime-game-launcher/usr/share/pixmaps
+		mkdir -p debian/an-anime-game-launcher/usr/share/applications/
+		mkdir -p debian/an-anime-game-launcher/usr/share/icons/hicolor/scalable/apps
+		cp -vf target/release/anime-game-launcher debian/an-anime-game-launcher/usr/bin/
+		chmod 755 debian/an-anime-game-launcher/usr/bin/anime-game-launcher
+		cp -vf assets/images/icon.png debian/an-anime-game-launcher/usr/share/pixmaps/an-anime-game-launcher.png
+		cp -vf assets/images/icon.png /usr/share/icons/hicolor/scalable/apps/moe.launcher.an-anime-game-launcher.png
+		chmod 644 debian/an-anime-game-launcher/usr/share/pixmaps/an-anime-game-launcher.png
+		chmod 644 debian/an-anime-game-launcher/usr/share/icons/hicolor/scalable/apps/moe.launcher.an-anime-game-launcher.png
+	    	cp -vf an-anime-game-launcher.desktop debian/an-anime-game-launcher/usr/share/applications/
+	    	chmod 644 debian/an-anime-game-launcher/usr/share/applications/an-anime-game-launcher.desktop
