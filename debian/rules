@@ -17,7 +17,7 @@ override_dh_auto_install:
 	chmod 644 debian/an-anime-game-launcher/usr/share/pixmaps/an-anime-game-launcher.png
 
 	mkdir -p debian/an-anime-game-launcher/usr/share/icons/hicolor/scalable/apps
-	cp -vf assets/images/icon.png /usr/share/icons/hicolor/scalable/apps/moe.launcher.an-anime-game-launcher.png
+	cp -vf assets/images/icon.png debian/an-anime-game-launcher/usr/share/icons/hicolor/scalable/apps/moe.launcher.an-anime-game-launcher.png
 	chmod 644 debian/an-anime-game-launcher/usr/share/icons/hicolor/scalable/apps/moe.launcher.an-anime-game-launcher.png
 
 	mkdir -p debian/an-anime-game-launcher/usr/share/applications/
