@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=An Anime Game Launcher
+Icon=moe.launcher.an-anime-game-launcher
+Exec=anime-game-launcher
+Type=Application
+Categories=Game
+Terminal=false

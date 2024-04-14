@@ -1,0 +1,27 @@
+Source: an-anime-game-launcher
+Section: games
+Priority: optional
+Maintainer: Pika <root@pika.com>
+Build-Depends: debhelper (>= 9), cargo, build-essential,
+            debhelper,
+            python3,
+            meson,
+            libadwaita-1-dev,
+            gettext,
+            desktop-file-utils,
+            make,
+            libjpeg-dev
+Standards-Version: 3.9.5
+
+Package: an-anime-game-launcher
+Architecture: linux-any
+Depends: libadwaita-1-0,
+         gir1.2-gtk-4.0,
+         gir1.2-adw-1,
+         gir1.2-vte-3.91,
+         p7zip,
+         git,
+         xdg-desktop-portal,
+         xdelta3,
+         ${shlibs:Depends}
+Description: A Launcher for a specific anime game with auto-patching, discord rpc and time tracking.
