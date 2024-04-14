@@ -5,7 +5,6 @@ DEBIAN_FRONTEND=noninteractive
 # Clone Upstream
 git clone https://github.com/an-anime-team/an-anime-game-launcher
 cp -rvf ./debian ./an-anime-game-launcher/
-cp -rvf ./Makefile ./an-anime-game-launcher/
 cp -rvf ./an-anime-game-launcher.desktop ./an-anime-game-launcher/
 cd ./an-anime-game-launcher/
 
